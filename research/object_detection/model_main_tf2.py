@@ -54,9 +54,7 @@ flags.DEFINE_integer('eval_timeout', 3600, 'Number of seconds to wait for an'
 
 flags.DEFINE_bool('use_tpu', False, 'Whether the job is executing on a TPU.')
 flags.DEFINE_string(
-    'tpu_name',
-    default=None,
-    help='Name of the Cloud TPU for Cluster Resolvers.')
+    'tpu_name', None, 'Name of the Cloud TPU for Cluster Resolvers.')
 flags.DEFINE_integer(
     'num_workers', 1, 'When num_workers > 1, training uses '
     'MultiWorkerMirroredStrategy. When num_workers = 1 it uses '
